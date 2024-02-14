@@ -1,4 +1,7 @@
-import { StatusProp } from "../models/status.model";
+
+export type StatusProp = {
+    status: 'loading' | 'error' | 'success';
+}
 
 const Status: React.FC<StatusProp> = (props) => {
 

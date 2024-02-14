@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import Status from './components/Status';
 import Header from './components/Header';
 import NestedComponent from './components/NestedComponent';
+import  Button from './components/Button';
+
 function App() {
 
   const student: Person = {
@@ -32,7 +34,7 @@ function App() {
           <h3>This is a children component</h3>
           <Status status='loading'/>
       </NestedComponent>
-      <button onClick={handleClick}>Hello event</button>
+      <Button onClick={handleClick}/>
     </div>
   );
 }

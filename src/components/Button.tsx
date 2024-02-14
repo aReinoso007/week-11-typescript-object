@@ -1,11 +1,10 @@
-
 interface ButtonProps {
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
-    children: React.ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
-    return (
-        <button onClick={onClick}>{children || 'Sample button'}</button>
-    )
+const Button: React.FC<ButtonProps> = (props) => {
+    return <button onClick={props.onClick}>Click me</button>
 }
+
+export default Button;
+//children: React.ReactNode;
