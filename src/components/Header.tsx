@@ -1,8 +1,10 @@
+import React from "react";
+
 type HeaderProp = {
     children: string;
 }
 
-const Header = ({ children }: HeaderProp) => {
+const Header: React.FC<HeaderProp> = ({ children }: HeaderProp) => {
     return (
         <h1>{children}</h1>
     )
