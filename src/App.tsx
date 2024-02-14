@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import { Person } from './models/Person.model';
+import ProfileComponent from './components/PersonComponent';
+import Card from 'react-bootstrap/Card';
 function App() {
+
+  const student: Person = {
+    name: 'John',
+    age: 25,
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card>
+        <Card.Body>
+          <ProfileComponent person={student} />
+        </Card.Body>
+      </Card>
     </div>
   );
 }
