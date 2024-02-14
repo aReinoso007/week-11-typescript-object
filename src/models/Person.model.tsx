@@ -6,4 +6,5 @@ export interface Person {
 
 export interface ProfileProps {
     person: Person;
+    message: string;
 }
